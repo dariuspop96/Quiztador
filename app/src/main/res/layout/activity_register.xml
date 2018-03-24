@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tid33797_mountain_001_hero"
+    tools:context="com.example.darius.quiztador.RegisterActivity">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="201dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_account_circle_white_48dp_1x"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_below="@+id/username"
+        android:background="@android:color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_lock_white_48dp_1x"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="#fff"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/password"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/rounded_rectangle_1"
+        android:text="REGISTER"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Already have an account? Login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
